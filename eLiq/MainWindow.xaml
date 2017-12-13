@@ -1,0 +1,62 @@
+﻿<Window x:Name="eLiq_Calc" x:Class="eLiq.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:eLiq"
+        mc:Ignorable="d"
+        Title="eLiq Calc by CryptoBojack v 0.1" Height="431.559" Width="360.288">
+
+    <Grid>
+
+        <Rectangle Fill="#FFE5E5EE" HorizontalAlignment="Left" Height="100" Margin="4,5,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle Fill="#FFCBEEC6" HorizontalAlignment="Left" Height="124" Margin="4,109,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="357" Margin="172,5,0,0" Stroke="Black" VerticalAlignment="Top" Width="164"/>
+        <TextBox x:Name="lbPgBase" HorizontalAlignment="Left" Height="22" Margin="94,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" TabIndex="1"/>
+        <TextBox x:Name="tbConcNic" HorizontalAlignment="Left" Height="22" Margin="94,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" TabIndex="3"/>
+        <TextBox x:Name="lbVgBase" HorizontalAlignment="Left" Height="22" Margin="94,43,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" TabIndex="2"/>
+        <Label Content="PG BASE" HorizontalAlignment="Left" Height="22" Margin="10,16,0,0" VerticalAlignment="Top" Width="53" FontSize="7"/>
+        <Label Content="VG BASE" HorizontalAlignment="Left" Height="22" Margin="10,43,0,0" VerticalAlignment="Top" Width="53" FontSize="7"/>
+        <Label Content="NICOTINE MG/L" HorizontalAlignment="Left" Height="22" Margin="10,70,0,0" VerticalAlignment="Top" Width="66" FontSize="7"/>
+        <TextBox x:Name="lbPgDaOttenere" HorizontalAlignment="Left" Height="22" Margin="94,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" TabIndex="4"/>
+        <TextBox x:Name="lbVgDaOttenere" HorizontalAlignment="Left" Height="22" Margin="94,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" TabIndex="5"/>
+        <TextBox x:Name="tbNicDaOttenere" HorizontalAlignment="Left" Height="22" Margin="94,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" TabIndex="6"/>
+        <TextBox x:Name="btVolDaott" HorizontalAlignment="Left" Height="22" Margin="94,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" TabIndex="7"/>
+        <Label Content="TARGET PG" HorizontalAlignment="Left" Height="22" Margin="10,115,0,0" VerticalAlignment="Top" Width="66" FontSize="7"/>
+        <Label Content="TARGET VG" HorizontalAlignment="Left" Height="22" Margin="10,145,0,0" VerticalAlignment="Top" Width="66" FontSize="7"/>
+        <Label Content="TARGET NICOTINE" HorizontalAlignment="Left" Height="22" Margin="10,176,0,0" VerticalAlignment="Top" Width="91" FontSize="7"/>
+        <Label Content="TARGET ML" HorizontalAlignment="Left" Height="22" Margin="10,205,0,0" VerticalAlignment="Top" Width="79" FontSize="7"/>
+        <Rectangle Fill="#FFCBEEC6" HorizontalAlignment="Left" Height="149" Margin="4,238,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <TextBox x:Name="tbFlavPerc1" HorizontalAlignment="Left" Height="22" Margin="94,245,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" TabIndex="8"/>
+        <TextBox x:Name="tbFlavPerc2" HorizontalAlignment="Left" Height="22" Margin="94,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" TabIndex="9"/>
+        <Label Content="% FLAVOR" HorizontalAlignment="Left" Height="22" Margin="10,245,0,0" VerticalAlignment="Top" Width="44" FontSize="7"/>
+        <Label Content="% FLAVOR" HorizontalAlignment="Left" Height="22" Margin="10,271,0,0" VerticalAlignment="Top" Width="66" FontSize="7"/>
+        <Button Content="MIX!" HorizontalAlignment="Left" Height="20" Margin="172,367,0,0" VerticalAlignment="Top" Width="119" Click="miscela"/>
+        <Label x:Name="lbPgRicettaFin" Content="" HorizontalAlignment="Left" Margin="259,11,0,0" Height="52" Width="67" VerticalContentAlignment="Center" FontSize="16" VerticalAlignment="Top"/>
+        <Label x:Name="lbVgRicettaFin" Content="" HorizontalAlignment="Left" Height="50" Margin="259,66,0,0" Width="67" FontSize="16" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="lbNicRicettaFin" Content="" HorizontalAlignment="Left" Height="52" Margin="259,118,0,0" Width="67" FontSize="16" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="lbFlav1RicettaFin" Content="" HorizontalAlignment="Left" Height="33" Margin="259,177,0,0" Width="67" FontSize="16" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="lbFlav2RicettaFin" Content="" HorizontalAlignment="Left" Height="31" Margin="259,215,0,0" Width="67" FontSize="16" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="PG ml:" HorizontalAlignment="Left" Height="52" Margin="177,11,0,0" Width="82" FontWeight="Bold" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="VG ml:" HorizontalAlignment="Left" Height="50" Margin="177,66,0,0" Width="82" FontWeight="Bold" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Nicotine ml:" HorizontalAlignment="Left" Height="52" Margin="177,118,0,0" Width="82" FontWeight="Bold" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="FLAVOR ml" HorizontalAlignment="Left" Height="33" Margin="177,177,0,0" Width="82" FontWeight="Bold" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="FLAVOR ml" HorizontalAlignment="Left" Height="31" Margin="177,215,0,0" Width="82" FontWeight="Bold" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+
+        <Label Content="% FLAVOR" HorizontalAlignment="Left" Height="22" Margin="10,298,0,0" VerticalAlignment="Top" Width="66" FontSize="7"/>
+        <Label Content="% FLAVOR" HorizontalAlignment="Left" Height="22" Margin="10,325,0,0" VerticalAlignment="Top" Width="66" FontSize="7"/>
+        <Label Content="% FLAVOR" HorizontalAlignment="Left" Height="22" Margin="10,352,0,0" VerticalAlignment="Top" Width="66" FontSize="7"/>
+        <TextBox x:Name="tbFlavPerc3" HorizontalAlignment="Left" Height="22" Margin="94,298,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" TabIndex="9"/>
+        <TextBox x:Name="tbFlavPerc4" HorizontalAlignment="Left" Height="22" Margin="94,325,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" TabIndex="10"/>
+        <TextBox x:Name="tbFlavPerc5" HorizontalAlignment="Left" Height="22" Margin="94,352,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" TabIndex="11"/>
+        <Label x:Name="lbFlav3RicettaFin" Content="" HorizontalAlignment="Left" Height="31" Margin="259,251,0,0" Width="67" FontSize="16" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="FLAVOR ml" HorizontalAlignment="Left" Height="31" Margin="177,251,0,0" Width="82" FontWeight="Bold" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <CheckBox x:Name="isVg" Content="VG" HorizontalAlignment="Left" Margin="59,245,0,0" VerticalAlignment="Top" FontSize="7" VerticalContentAlignment="Center" Height="22"/>
+        <Label x:Name="lbFlav4RicettaFin" Content="" HorizontalAlignment="Left" Height="31" Margin="259,287,0,0" Width="67" FontSize="16" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="FLAVOR ml" HorizontalAlignment="Left" Height="31" Margin="177,287,0,0" Width="82" FontWeight="Bold" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <Button Content="Info" HorizontalAlignment="Left" Height="20" Margin="296,367,0,0" VerticalAlignment="Top" Width="40" Click="info"/>
+        <Label x:Name="lbFlav5RicettaFin" Content="" HorizontalAlignment="Left" Height="31" Margin="259,323,0,0" Width="67" FontSize="16" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="FLAVOR ml" HorizontalAlignment="Left" Height="31" Margin="177,323,0,0" Width="82" FontWeight="Bold" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+    </Grid>
+
+</Window>

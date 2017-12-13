@@ -1,0 +1,18 @@
+﻿<Window x:Class="eLiq.info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:eLiq"
+        mc:Ignorable="d"
+        Title="info" Height="300" Width="300">
+    <Grid>
+        <Button Content="Close and Go Back" HorizontalAlignment="Left" Height="34" Margin="7,225,0,0" VerticalAlignment="Top" Width="272" Click="Button_Click"/>
+        <Label Content="eLiq Calculator by CryptoBojack" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="39" FontSize="18" Width="272"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="292" TextAlignment="Center"><Run Text="For further information please contact me at"/><Run Text=" "/><Run FontWeight="Bold" Text="cryptobojack@gmail.com "/></TextBlock>
+        <Image Margin="93,90,101,82" Source="Image3.png" Stretch="Fill"/>
+        <Label Content="If you found this useful please consider a Bitcoin donation" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" FontSize="10"/>
+        <Label Content="17VqN9PuC5QdxdaPjDTwCarHdSDAdnrjh6" HorizontalAlignment="Left" Margin="46,187,0,0" VerticalAlignment="Top" FontSize="10"/>
+
+    </Grid>
+</Window>
